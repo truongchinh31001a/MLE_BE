@@ -13,11 +13,9 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 
-ROOT_DIR = Path(__file__).resolve().parents[1]
-DEFAULT_MODEL_PATH = ROOT_DIR / "artifacts" / "models" / "cardio_xgboost_final.joblib"
-DEFAULT_METADATA_PATH = (
-    ROOT_DIR / "artifacts" / "metrics" / "cardio_xgboost_final_metadata.json"
-)
+SERVER_DIR = Path(__file__).resolve().parent
+DEFAULT_MODEL_PATH = SERVER_DIR / "models" / "cardio_xgboost_final.joblib"
+DEFAULT_METADATA_PATH = SERVER_DIR / "models" / "cardio_xgboost_final_metadata.json"
 CARDIO_FIELD_ORDER = [
     "gender",
     "height",
