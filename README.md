@@ -31,6 +31,8 @@ Neu khong set `CARDIO_MODEL_PATH` va `CARDIO_METADATA_PATH`, server se mac dinh 
 - `./models/cardio_xgboost_final.joblib`
 - `./models/cardio_xgboost_final_metadata.json`
 
+Luu y: file model `.joblib` phu thuoc vao version `scikit-learn`, `xgboost`, `numpy`, `pandas` va `joblib`. Vi vay `requirements.txt` da duoc pin version de tranh loi runtime kieu `"'str' object has no attribute 'transform'"` khi deploy.
+
 ## 4. Deploy len Railway tu GitHub
 
 Neu ban push repo backend nay len GitHub nhu mot repo rieng, Railway se deploy truc tiep tu root cua repo.
